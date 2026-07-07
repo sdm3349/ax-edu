@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>335만원 AI 실무교육을 기업 부담 35만원에 — 반월시화 산단 정부지원 특화교육 | 해피에이아이</title>
+<meta name="description" content="반월시화 산업단지 입주기업 대상 정부지원(약 90%) AI 실무교육. 우리 회사 실제 업무·데이터로 배우고 절감된 업무시간을 숫자로 증명합니다. 신청 서류는 교육기관이 지원.">
+<link rel="preconnect" href="https://cdn.jsdelivr.net">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
+<style>
+:root{
+  --navy:#1E2761; --dk1:#2E3A7C; --dk2:#3A4890;
+  --gold:#E8A33D; --gold-dk:#c9862a;
+  --body:#1A1F36; --gray:#4A5468;
+  --cblue:#EFF3FC; --ccream:#FDF6EA; --cpeach:#FBF1EC;
+  --lod:#CADCFC; --mod:#AFC1F0;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  font-family:'Pretendard','Malgun Gothic','맑은 고딕',sans-serif;
+  color:var(--body); background:#fff;
+  font-size:18px; line-height:1.65;
+  word-break:keep-all;
+  overflow-x:hidden;
+}
+.wrap{max-width:1080px;margin:0 auto;padding:0 20px}
+section{padding:64px 0}
+h2{color:var(--navy);font-size:clamp(26px,4.5vw,36px);line-height:1.3;margin-bottom:14px}
+.sub{color:var(--gray);font-size:clamp(16px,2.6vw,19px);margin-bottom:36px}
+.gold{color:var(--gold)}
+.center{text-align:center}
+
+/* ── 상단 고정 바 ── */
+.topbar{
+  position:sticky;top:0;z-index:50;background:var(--navy);color:#fff;
+  display:flex;align-items:center;justify-content:space-between;
+  padding:10px 18px;gap:10px;
+}
+.topbar .brand{font-weight:700;font-size:15px;color:var(--lod);
+  min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.topbar a.call{
+  background:var(--gold);color:var(--navy);font-weight:800;
+  padding:8px 14px;border-radius:999px;text-decoration:none;font-size:15px;white-space:nowrap;flex-shrink:0;
+}
+
+/* ── 히어로 ── */
+.hero{
+  background:linear-gradient(150deg,var(--dk1) 55%,var(--dk2) 100%);
+  color:#fff;padding:80px 0 72px;position:relative;overflow:hidden;
+}
+.hero::after{content:'';position:absolute;right:-120px;top:-120px;width:380px;height:380px;
+  background:var(--dk2);border-radius:60px;opacity:.7}
+.hero .wrap{position:relative;z-index:1}
+.badge{
+  display:inline-block;background:rgba(255,255,255,.12);color:var(--lod);
+  padding:8px 16px;border-radius:999px;font-size:15px;font-weight:600;margin-bottom:26px;
+}
+.hero h1{font-size:clamp(34px,6.5vw,58px);line-height:1.25;font-weight:800}
+.hero h1 .gold{display:inline}
+.hero .lead{margin-top:22px;font-size:clamp(17px,3vw,21px);color:var(--lod)}
+.hero .fine{margin-top:10px;font-size:clamp(14px,2.4vw,16px);color:var(--mod)}
+.cta-row{margin-top:34px;display:flex;gap:14px;flex-wrap:wrap}
+.btn{
+  display:inline-block;text-decoration:none;font-weight:800;border-radius:14px;
+  padding:16px 28px;font-size:clamp(17px,3vw,20px);text-align:center;
+}
+.btn-gold{background:var(--gold);color:var(--navy)}
+.btn-gold:hover{background:var(--gold-dk);color:#fff}
+.btn-line{border:2px solid var(--lod);color:#fff}
+.btn-line:hover{background:rgba(255,255,255,.1)}
+
+/* ── 카드 공통 ── */
+.cards{display:grid;gap:18px}
+.card{border-radius:18px;padding:26px 26px 24px}
+.c-blue{background:var(--cblue)} .c-cream{background:var(--ccream)} .c-peach{background:var(--cpeach)}
+.card h3{color:var(--navy);font-size:clamp(19px,3vw,22px);margin-bottom:8px}
+.card .tag{color:var(--gold);font-weight:800;font-size:15px;letter-spacing:.5px}
+.card p{font-size:clamp(16px,2.6vw,17.5px)}
+@media(min-width:760px){ .cards.three{grid-template-columns:1fr 1fr 1fr} .cards.two{grid-template-columns:1fr 1fr} }
+
+/* ── 지원금 ── */
+.money .amount{font-size:clamp(34px,6vw,44px);font-weight:800;color:var(--gold);line-height:1.2;margin-top:4px}
+.money .note{color:var(--gray);font-size:15px}
+.eligibility{border-radius:18px;background:var(--navy);color:#fff;padding:28px;margin-top:22px}
+.eligibility h3{color:var(--gold);font-size:20px;margin-bottom:10px}
+.eligibility li{list-style:none;font-size:clamp(16px,2.8vw,18px);padding:6px 0 6px 34px;position:relative}
+.eligibility li::before{content:'✓';position:absolute;left:4px;color:var(--gold);font-weight:800}
+.eligibility .fine{color:var(--mod);font-size:15px;margin-top:10px}
+
+/* ── 비교 ── */
+.vs .card .old{color:var(--gray);font-size:15.5px;margin-bottom:6px}
+.vs .card .old b{color:var(--gray)}
+.vs .card .new{font-weight:700;color:var(--navy)}
+.goalband{border-radius:16px;background:var(--navy);color:var(--lod);padding:20px 26px;margin-top:22px;
+  font-size:clamp(16px,2.8vw,18px);text-align:center}
+.goalband b{color:var(--gold)}
+
+/* ── 커리큘럼 ── */
+.curri .round{font-weight:800;color:var(--gold);font-size:15px}
+.afterband{border-radius:16px;background:var(--cblue);padding:22px 26px;margin-top:22px;font-size:clamp(16px,2.8vw,17.5px)}
+.afterband b{color:var(--navy)}
+
+/* ── 대상 ── */
+.who{display:grid;gap:18px}
+@media(min-width:760px){.who{grid-template-columns:1.1fr 1fr}}
+.who .big{font-size:clamp(40px,7vw,56px);font-weight:800;color:var(--gold);line-height:1.1}
+.who .dept{color:var(--gray);margin-top:8px}
+
+/* ── 절차 ── */
+.steps{counter-reset:step;display:grid;gap:14px}
+.step{border-radius:16px;padding:18px 22px;display:flex;align-items:center;gap:18px}
+.step:nth-child(odd){background:var(--cblue)} .step:nth-child(even){background:var(--ccream)}
+.step .no{font-size:26px;font-weight:800;color:var(--gold);min-width:36px}
+.step .t{font-weight:700;color:var(--navy);font-size:clamp(17px,3vw,19px)}
+.step .d{color:var(--gray);font-size:15.5px}
+.caution{border-radius:16px;background:var(--cpeach);padding:22px 26px;margin-top:22px}
+.caution h3{color:var(--navy);font-size:18px;margin-bottom:8px}
+.caution li{list-style:none;padding:3px 0;color:var(--body);font-size:16px}
+.caution li::before{content:'·  ';color:var(--gold);font-weight:800}
+
+/* ── CTA ── */
+.cta{background:linear-gradient(150deg,var(--dk1) 55%,var(--dk2));color:#fff;text-align:center}
+.cta h2{color:#fff}
+.cta .contactbox{
+  background:var(--dk2);border-radius:20px;display:inline-block;
+  padding:26px 40px;margin-top:26px;
+}
+.cta .name{font-size:18px;font-weight:700}
+.cta .tel{display:block;font-size:clamp(30px,6vw,40px);font-weight:800;color:var(--gold);text-decoration:none;margin:6px 0}
+.cta .mail{color:var(--gold);font-size:18px;text-decoration:none}
+.cta .org{margin-top:26px;color:var(--mod);font-size:15px;line-height:1.7}
+
+footer{background:var(--navy);color:var(--mod);font-size:13.5px;padding:26px 0;text-align:center;line-height:1.7}
+
+/* 모바일 미세조정 — 시니어 가독성 */
+@media(max-width:600px){
+  body{font-size:19px}
+  section{padding:52px 0}
+  .btn{width:100%}
+  .step{flex-direction:row}
+}
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <span class="brand">해피에이아이 · AX 특화교육</span>
+  <a class="call" href="tel:010-2998-3349">📞 010-2998-3349</a>
+</div>
+
+<!-- 히어로 -->
+<header class="hero">
+  <div class="wrap">
+    <span class="badge">반월시화 산업단지 입주기업 대상 · 2026 AX 기업지원 프로그램(특화교육)</span>
+    <h1>335만원 AI 실무교육을<br><span class="gold">기업 부담 35만원</span>으로<br>받으십시오</h1>
+    <p class="lead">정부지원금 300만원(약 90%) — 우리 회사 실제 업무·데이터로 배우고,<br>절감된 업무시간을 숫자로 증명하는 12시간</p>
+    <p class="fine">※ 부가세 33.5만원 별도 기업 부담 · 예산 소진 시 접수 마감(선착순)</p>
+    <div class="cta-row">
+      <a class="btn btn-gold" href="tel:010-2998-3349">전화로 자격 확인 (무료)</a>
+      <a class="btn btn-line" href="mailto:sdm@happyai.ai?subject=[AX특화교육 문의] 회사명/업종/교육인원">이메일 문의</a>
+    </div>
+  </div>
+</header>
+
+<!-- 지원금 -->
+<section class="money">
+  <div class="wrap">
+    <h2>정부가 교육비의 약 90%를 지원합니다</h2>
+    <p class="sub">한국산업단지공단 반월시화AX실증산단센터 「AX내재화」 특화교육(기업 맞춤형)</p>
+    <div class="cards three">
+      <div class="card c-blue"><h3>총 교육비</h3><div class="amount">335만원</div><p class="note">(VAT 별도)</p></div>
+      <div class="card c-cream"><h3>정부지원금</h3><div class="amount">300만원</div><p class="note">교육비의 89.6%</p></div>
+      <div class="card c-peach"><h3>기업 실부담</h3><div class="amount">35만원</div><p class="note">+ 부가세 33.5만원</p></div>
+    </div>
+    <div class="eligibility">
+      <h3>신청 자격</h3>
+      <ul>
+        <li>반월 · 시화 · 시화MTV 산업단지 입주 기업</li>
+        <li>중소기업 또는 중견기업</li>
+        <li>반월시화 MINI 얼라이언스 가입 기업</li>
+      </ul>
+      <p class="fine">얼라이언스 미가입이어도 됩니다 — 가입 절차(무료)부터 저희가 안내해 드립니다.<br>※ 2개사 이상 공동 신청(업종 협의체 교육) 시 최대 600만원까지 확대</p>
+    </div>
+  </div>
+</section>
+
+<!-- 차별화 -->
+<section class="vs" style="background:#F7F9FE">
+  <div class="wrap">
+    <h2>유튜브 독학과 무엇이 다른가</h2>
+    <p class="sub">무료 AI 강의는 지식을 줍니다. 이 과정은 <b>귀사에서 측정된 성과</b>를 남깁니다.</p>
+    <div class="cards three">
+      <div class="card c-blue">
+        <span class="tag">배우는 재료</span>
+        <p class="old">범용 강의 — 남의 회사 사례, 범용 예시</p>
+        <p class="new">우리 회사의 실제 업무·문서·데이터로 실습합니다</p>
+      </div>
+      <div class="card c-cream">
+        <span class="tag">결과물</span>
+        <p class="old">범용 강의 — "알긴 아는데" 다음 날 안 씀</p>
+        <p class="new">교육장에서 바로 실무에 적용된 산출물이 나옵니다</p>
+      </div>
+      <div class="card c-peach">
+        <span class="tag">성과 증명</span>
+        <p class="old">범용 강의 — 측정 불가</p>
+        <p class="new">교육 전후 업무시간을 재서 절감률 숫자로 보고합니다</p>
+      </div>
+    </div>
+    <div class="goalband">교육 목표 — 참가자 전원이 자기 업무에 AI를 상시 적용하고, <b>업무시간 20% 이상 절감</b>을 측정으로 증명</div>
+  </div>
+</section>
+
+<!-- 커리큘럼 -->
+<section class="curri">
+  <div class="wrap">
+    <h2>무엇을 배우나</h2>
+    <p class="sub">총 12시간 (4시간 × 3회) · 귀사 방문 교육</p>
+    <div class="cards three">
+      <div class="card c-blue">
+        <span class="round">1회차</span>
+        <h3>업무 진단 &amp; AI 매핑</h3>
+        <p>생성형 AI의 가능성과 한계, 정보보안(민감정보 마스킹). 부서별 업무를 분해해 AI 적용 후보를 찾고, 현재 소요시간(baseline)을 기록합니다.</p>
+      </div>
+      <div class="card c-cream">
+        <span class="round">2회차</span>
+        <h3>우리 문서로 자동화</h3>
+        <p>자사 문서 양식 기반 프롬프트 설계. 실제 보고서·회의록·이메일 초안을 AI로 작성하는 실습과 품질 검증법.</p>
+      </div>
+      <div class="card c-peach">
+        <span class="round">3회차</span>
+        <h3>데이터 분석 &amp; 현장 적용</h3>
+        <p>자사 생산·품질·매출 데이터를 AI로 분석·이상탐지 실습. 개인별 「AI 업무적용 계획서」(KPI·목표 절감률) 확정.</p>
+      </div>
+    </div>
+    <div class="afterband"><b>교육 후 4주간 현장 적용</b> — 지정 업무에 AI 상시 적용 → 활용일지 기록 → 소요시간 재측정 → <b>절감률 산출 리포트</b>를 드립니다. 모든 참가자는 실습 산출물과 「AI 업무적용 계획서」를 가지고 수료합니다.</div>
+  </div>
+</section>
+
+<!-- 대상 -->
+<section style="background:#F7F9FE">
+  <div class="wrap">
+    <h2>누가 받는 교육인가</h2>
+    <div class="who" style="margin-top:30px">
+      <div class="card c-blue">
+        <h3>부서별 핵심인재</h3>
+        <div class="big">4~8명</div>
+        <p class="dept">생산 · 품질 · 구매 · 영업 · 관리</p>
+      </div>
+      <div class="card c-cream">
+        <span class="tag">왜 소수 정예인가</span>
+        <p style="font-weight:700;color:var(--navy);margin-top:6px">한 사람씩 자기 업무로 실습하고 개별 코칭을 받는 방식이라 소수일수록 효과가 큽니다.</p>
+        <p style="color:var(--gray);margin-top:10px">수료한 핵심인재가 부서에 전파합니다 (우수사례 사내 공유회)</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 회사에 남는 것 -->
+<section>
+  <div class="wrap">
+    <h2>교육이 끝나면 회사에 남는 것</h2>
+    <p class="sub">만족도 설문이 아니라, 경영진에게 보고할 수 있는 숫자와 산출물</p>
+    <div class="cards three">
+      <div class="card c-blue"><h3>절감률 리포트</h3><p>교육 전 baseline 대비 재측정 결과 — "부서별 업무시간 몇 % 절감" 정량 보고</p></div>
+      <div class="card c-cream"><h3>실무 산출물</h3><p>참가자 전원의 실제 업무 문서·데이터 분석 결과물 + 개인별 AI 업무적용 계획서</p></div>
+      <div class="card c-peach"><h3>정착 체계</h3><p>부서별 활용일지·우수사례 공유회 — 교육이 끝나도 계속 쓰게 만드는 장치</p></div>
+    </div>
+    <div class="goalband">성과목표 예시 — 대상 업무 소요시간 <b>20%↑ 절감</b> · 1인당 <b>월 AI 활용 20회↑</b></div>
+  </div>
+</section>
+
+<!-- 절차 -->
+<section style="background:#F7F9FE">
+  <div class="wrap">
+    <h2>신청은 저희가 다 해드립니다</h2>
+    <p class="sub">사업신청서 · 사업계획서 · 견적서 — 서류 작성 전 과정을 교육기관이 지원합니다</p>
+    <div class="steps">
+      <div class="step"><span class="no">1</span><div><div class="t">전화 한 통</div><div class="d">회사명·인원만 알려주세요. 자격 여부 즉시 확인 (무료)</div></div></div>
+      <div class="step"><span class="no">2</span><div><div class="t">서류는 저희가 만들어 드립니다</div><div class="d">신청서·계획서·견적서 작성 지원 + 증빙 안내</div></div></div>
+      <div class="step"><span class="no">3</span><div><div class="t">AX센터 승인</div><div class="d">서면평가 70점 이상 선정</div></div></div>
+      <div class="step"><span class="no">4</span><div><div class="t">교육 진행</div><div class="d">승인 후 일정 확정 · 4시간×3회 귀사 방문</div></div></div>
+      <div class="step"><span class="no">5</span><div><div class="t">절감률 리포트 보고</div><div class="d">4주 적용·재측정 후 성과 보고</div></div></div>
+    </div>
+    <div class="caution">
+      <h3>꼭 알아두실 것</h3>
+      <ul>
+        <li>교육은 반드시 센터 승인 후 시작합니다 (승인 전 착수·결제분은 지원 제외)</li>
+        <li>지원금은 교육 종료·최종평가 후 정산 지급 방식입니다 (실부담+부가세는 기업이 선집행)</li>
+        <li>접수 마감이 따로 없고 예산 소진 시 종료 — 빠른 신청이 유리합니다</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta">
+  <div class="wrap">
+    <h2>전화 한 통이면 시작됩니다</h2>
+    <p style="color:var(--lod);margin-top:10px;font-size:clamp(17px,3vw,20px)">회사명 · 업종 · 교육 희망 인원, 세 가지만 말씀해 주세요.<br>자격 확인부터 신청 서류, 성과 보고까지 — 나머지는 저희가 합니다.</p>
+    <div class="contactbox">
+      <div class="name">해피에이아이(주) · 신동만 이사</div>
+      <a class="tel" href="tel:010-2998-3349">010-2998-3349</a>
+      <a class="mail" href="mailto:sdm@happyai.ai">sdm@happyai.ai</a>
+    </div>
+    <p class="org">교육기관: 해피에이아이(주) — 제조현장 MES/ERP 운영 · 생성형 AI 교육 수행<br>반월시화 MINI 얼라이언스 가입 공급기업</p>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    본 페이지의 지원 내용은 「2026년 반월시화형 AX 기업지원 프로그램(AX내재화)」 공고(2026-06-22) 기준이며, 선정 여부는 반월시화AX실증산단센터 평가에 따릅니다.<br>
+    ⓒ 2026 해피에이아이(주) · 서울특별시 금천구 가산디지털1로 30, 1707호 · 사업자등록번호 612-81-55796
+  </div>
+</footer>
+
+</body>
+</html>
